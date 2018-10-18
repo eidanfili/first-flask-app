@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="main.scss">
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+<body>
+    <nav>
+        <div><a href="http://localhost:5000/">Home page</a></div>
+        <div><a href="http://localhost:5000/show">showpage</a></div>
+    </nav>
+    <h2>Welcome to the flask app</h2>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <p>my footer</p>
+    <div id="footer">{% block footer %}{% endblock %}</div>
+</body>
+</html>
