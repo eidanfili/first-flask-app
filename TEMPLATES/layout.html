@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     {% block head %}
-    <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <title>{% block title %}{% endblock %}</title>
     {% endblock %}
+
 <body>
     <nav>
         <div><a href="http://localhost:5000/">Home page</a></div>
@@ -15,4 +17,5 @@
     <p>my footer</p>
     <div id="footer">{% block footer %}{% endblock %}</div>
 </body>
+
 </html>
